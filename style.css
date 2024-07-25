@@ -129,7 +129,6 @@ label{
     display: flex;
     align-items: center;
     position: relative;
-    /* justify-content: space-between; */
     gap: 30px;
 }
 .removeBtn{
@@ -187,13 +186,16 @@ label{
 
 /* media Queries */
 @media (max-width: 480px){
+    body{
+       height: 100%;
+    }
     .container{
-        height: 100vh;
-        width: 100vw;
+        height: 100svh;
+        width: 100vw ;   
         border-radius: 0;
     }
     .task-add-bar{
-        height: 45px;
+        min-height: 45px;
         width: 350px;
     }
     .addBtn{
@@ -205,14 +207,18 @@ label{
         font-size: 15px;
     }
     .list-container{
-        height: 550px;
-        padding-left: 20px;
+        height:550px;
+        max-width: 310px;
+    }
+    .removeBtn{
+        right: 40px;
     }
     .line{
         width: 350px;
     }
     .buttom-text{
-        width: 330px;
+        max-width: 330px;
+        margin-bottom: 20px;
     }
     .removeBtn{
         margin-left: 280px;
